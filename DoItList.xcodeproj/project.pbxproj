@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		E886612526E670FA004CF2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E886612326E670FA004CF2C6 /* LaunchScreen.storyboard */; };
 		E886612D26E67BC3004CF2C6 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886612C26E67BC3004CF2C6 /* TasksViewController.swift */; };
 		E886613126E756AE004CF2C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E886613026E756AE004CF2C6 /* GoogleService-Info.plist */; };
+		E8A78D4A26F0FD8800B2CCB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A78D4926F0FD8800B2CCB6 /* User.swift */; };
+		E8A78D4C26F0FD9100B2CCB6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A78D4B26F0FD9100B2CCB6 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E886612626E670FA004CF2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E886612C26E67BC3004CF2C6 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		E886613026E756AE004CF2C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8A78D4926F0FD8800B2CCB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E8A78D4B26F0FD9100B2CCB6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,6 @@
 				4AFF8D0A9D5DBABB8B66B98F /* Pods-DoItList.debug.xcconfig */,
 				74D06D6539421655162CB221 /* Pods-DoItList.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +88,8 @@
 		E886611726E670F8004CF2C6 /* DoItList */ = {
 			isa = PBXGroup;
 			children = (
+				E8A78D4D26F0FD9700B2CCB6 /* Model */,
+				E8A78D4E26F0FDA700B2CCB6 /* View */,
 				E886612E26E67BD3004CF2C6 /* Controllers */,
 				E886612F26E67BF0004CF2C6 /* Supporting */,
 			);
@@ -105,13 +110,29 @@
 			children = (
 				E886611826E670F8004CF2C6 /* AppDelegate.swift */,
 				E886611A26E670F8004CF2C6 /* SceneDelegate.swift */,
-				E886611E26E670F9004CF2C6 /* Main.storyboard */,
 				E886612126E670FA004CF2C6 /* Assets.xcassets */,
 				E886612326E670FA004CF2C6 /* LaunchScreen.storyboard */,
 				E886612626E670FA004CF2C6 /* Info.plist */,
 				E886613026E756AE004CF2C6 /* GoogleService-Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		E8A78D4D26F0FD9700B2CCB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8A78D4926F0FD8800B2CCB6 /* User.swift */,
+				E8A78D4B26F0FD9100B2CCB6 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8A78D4E26F0FDA700B2CCB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E886611E26E670F9004CF2C6 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +253,8 @@
 				E886611D26E670F8004CF2C6 /* LoginViewController.swift in Sources */,
 				E886612D26E67BC3004CF2C6 /* TasksViewController.swift in Sources */,
 				E886611926E670F8004CF2C6 /* AppDelegate.swift in Sources */,
+				E8A78D4A26F0FD8800B2CCB6 /* User.swift in Sources */,
+				E8A78D4C26F0FD9100B2CCB6 /* Task.swift in Sources */,
 				E886611B26E670F8004CF2C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
